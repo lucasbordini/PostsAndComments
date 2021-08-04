@@ -6,16 +6,23 @@
 //
 
 import UIKit
+import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    var window: UIWindow?
+    var container = Container()
 
+    var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        registerDependencies()
+
+        let postsViewController = self.window?.rootViewController as? PostsViewController
+        postsViewController?.presenter = container.resolve(PostsPresenter.self)
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -48,5 +55,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+    private func registerDependencies() {
+        self.container.register(NetworkClient.self, factory: { _ in
+            return ServerClient()
+        })
+        self.container.register(PostsPresenter.self, factory: { r in
+            return PostsPresenter(r.resolve(NetworkClient.self))
+        })
+    }
 }
 

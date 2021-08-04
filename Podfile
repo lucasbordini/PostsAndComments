@@ -6,5 +6,8 @@ target 'PostsAndComments' do
   use_frameworks!
 
   # Pods for PostsAndComments
+	pod 'Alamofire'
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
 
 end

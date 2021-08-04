@@ -3,27 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F82B62A9219ECFC5C3B2681 /* Pods_PostsAndComments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A78B5AEA3F17EDDC7C6A53 /* Pods_PostsAndComments.framework */; };
 		FDB8187526B9FA7F0068E359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8187426B9FA7F0068E359 /* AppDelegate.swift */; };
 		FDB8187726B9FA7F0068E359 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8187626B9FA7F0068E359 /* SceneDelegate.swift */; };
-		FDB8187926B9FA7F0068E359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8187826B9FA7F0068E359 /* ViewController.swift */; };
-		FDB8187C26B9FA7F0068E359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB8187A26B9FA7F0068E359 /* Main.storyboard */; };
 		FDB8187E26B9FA800068E359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB8187D26B9FA800068E359 /* Assets.xcassets */; };
 		FDB8188126B9FA800068E359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB8187F26B9FA800068E359 /* LaunchScreen.storyboard */; };
+		FDB8188F26B9FDC40068E359 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8188E26B9FDC40068E359 /* Presenter.swift */; };
+		FDB8189126B9FE440068E359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8189026B9FE440068E359 /* ViewController.swift */; };
+		FDB8189426B9FFA80068E359 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8189326B9FFA80068E359 /* Post.swift */; };
+		FDB8189626B9FFF60068E359 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8189526B9FFF60068E359 /* Comment.swift */; };
+		FDB8189C26BA00BD0068E359 /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB8189B26BA00BD0068E359 /* Posts.storyboard */; };
+		FDB8189E26BA00CF0068E359 /* PostsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB8189D26BA00CF0068E359 /* PostsCell.xib */; };
+		FDB818A026BA01A80068E359 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8189F26BA01A80068E359 /* PostsCell.swift */; };
+		FDB818A226BA03560068E359 /* TranslatableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818A126BA03560068E359 /* TranslatableLabel.swift */; };
+		FDB818A426BA04680068E359 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB818A326BA04680068E359 /* Localizable.strings */; };
+		FDB818A626BA06240068E359 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818A526BA06240068E359 /* PostsViewController.swift */; };
+		FDB818A826BA06540068E359 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818A726BA06540068E359 /* PostsPresenter.swift */; };
+		FDB818AB26BA27FE0068E359 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818AA26BA27FE0068E359 /* NetworkClient.swift */; };
+		FDB818AD26BA28310068E359 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818AC26BA28310068E359 /* API.swift */; };
+		FDB818AF26BA29420068E359 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818AE26BA29420068E359 /* Constants.swift */; };
+		FDB818B326BA2E760068E359 /* LoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB818B226BA2E760068E359 /* LoadView.xib */; };
+		FDB818B526BA2EE10068E359 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B426BA2EE10068E359 /* LoadView.swift */; };
+		FDB818B826BA2F2E0068E359 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B726BA2F2E0068E359 /* NSObject+Extensions.swift */; };
+		FDB818BA26BA32D80068E359 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B926BA32D80068E359 /* Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33A78B5AEA3F17EDDC7C6A53 /* Pods_PostsAndComments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostsAndComments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3A58BB1977CB8220BD7F8B /* Pods-PostsAndComments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndComments.release.xcconfig"; path = "Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments.release.xcconfig"; sourceTree = "<group>"; };
+		E2D8B3D2EA026FBD2FAF63FA /* Pods-PostsAndComments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndComments.debug.xcconfig"; path = "Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments.debug.xcconfig"; sourceTree = "<group>"; };
 		FDB8187126B9FA7F0068E359 /* PostsAndComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostsAndComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB8187426B9FA7F0068E359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB8187626B9FA7F0068E359 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDB8187826B9FA7F0068E359 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDB8187B26B9FA7F0068E359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDB8187D26B9FA800068E359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB8188026B9FA800068E359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB8188226B9FA800068E359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB8188E26B9FDC40068E359 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		FDB8189026B9FE440068E359 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB8189326B9FFA80068E359 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FDB8189526B9FFF60068E359 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FDB8189B26BA00BD0068E359 /* Posts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posts.storyboard; sourceTree = "<group>"; };
+		FDB8189D26BA00CF0068E359 /* PostsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCell.xib; sourceTree = "<group>"; };
+		FDB8189F26BA01A80068E359 /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		FDB818A126BA03560068E359 /* TranslatableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatableLabel.swift; sourceTree = "<group>"; };
+		FDB818A326BA04680068E359 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FDB818A526BA06240068E359 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		FDB818A726BA06540068E359 /* PostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		FDB818AA26BA27FE0068E359 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FDB818AC26BA28310068E359 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FDB818AE26BA29420068E359 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FDB818B226BA2E760068E359 /* LoadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadView.xib; sourceTree = "<group>"; };
+		FDB818B426BA2EE10068E359 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
+		FDB818B726BA2F2E0068E359 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		FDB818B926BA32D80068E359 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +67,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F82B62A9219ECFC5C3B2681 /* Pods_PostsAndComments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADCCDD00DC579B050DA0E23D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8B3D2EA026FBD2FAF63FA /* Pods-PostsAndComments.debug.xcconfig */,
+				8E3A58BB1977CB8220BD7F8B /* Pods-PostsAndComments.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F09415832103572CB255F87D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33A78B5AEA3F17EDDC7C6A53 /* Pods_PostsAndComments.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDB8186826B9FA7F0068E359 = {
 			isa = PBXGroup;
 			children = (
 				FDB8187326B9FA7F0068E359 /* PostsAndComments */,
 				FDB8187226B9FA7F0068E359 /* Products */,
+				ADCCDD00DC579B050DA0E23D /* Pods */,
+				F09415832103572CB255F87D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +112,151 @@
 		FDB8187326B9FA7F0068E359 /* PostsAndComments */ = {
 			isa = PBXGroup;
 			children = (
+				FDB8188826B9FCB60068E359 /* Assets */,
+				FDB8188926B9FCC80068E359 /* Base */,
+				FDB8188A26B9FCD20068E359 /* Data */,
+				FDB8188B26B9FCD80068E359 /* Scene */,
+				FDB8188C26B9FCF60068E359 /* SupportingFiles */,
+				FDB8188D26B9FD020068E359 /* Utils */,
+			);
+			path = PostsAndComments;
+			sourceTree = "<group>";
+		};
+		FDB8188826B9FCB60068E359 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FDB8187D26B9FA800068E359 /* Assets.xcassets */,
+				FDB818A326BA04680068E359 /* Localizable.strings */,
+				FDB818B926BA32D80068E359 /* Localizable.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FDB8188926B9FCC80068E359 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FDB8188E26B9FDC40068E359 /* Presenter.swift */,
+				FDB8189026B9FE440068E359 /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FDB8188A26B9FCD20068E359 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818A926BA27D40068E359 /* Network */,
+				FDB8189226B9FF920068E359 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FDB8188B26B9FCD80068E359 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FDB8189726BA00750068E359 /* Posts */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FDB8188C26B9FCF60068E359 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				FDB8187426B9FA7F0068E359 /* AppDelegate.swift */,
 				FDB8187626B9FA7F0068E359 /* SceneDelegate.swift */,
-				FDB8187826B9FA7F0068E359 /* ViewController.swift */,
-				FDB8187A26B9FA7F0068E359 /* Main.storyboard */,
-				FDB8187D26B9FA800068E359 /* Assets.xcassets */,
 				FDB8187F26B9FA800068E359 /* LaunchScreen.storyboard */,
 				FDB8188226B9FA800068E359 /* Info.plist */,
 			);
-			path = PostsAndComments;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FDB8188D26B9FD020068E359 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818B626BA2F200068E359 /* Extensions */,
+				FDB818B026BA29460068E359 /* Components */,
+				FDB818AE26BA29420068E359 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FDB8189226B9FF920068E359 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDB8189326B9FFA80068E359 /* Post.swift */,
+				FDB8189526B9FFF60068E359 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDB8189726BA00750068E359 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				FDB8189A26BA00940068E359 /* VIewController */,
+				FDB8189926BA008D0068E359 /* Presenter */,
+				FDB8189826BA00890068E359 /* View */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		FDB8189826BA00890068E359 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDB8189B26BA00BD0068E359 /* Posts.storyboard */,
+				FDB8189D26BA00CF0068E359 /* PostsCell.xib */,
+				FDB8189F26BA01A80068E359 /* PostsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDB8189926BA008D0068E359 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818A726BA06540068E359 /* PostsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FDB8189A26BA00940068E359 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818A526BA06240068E359 /* PostsViewController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		FDB818A926BA27D40068E359 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818AA26BA27FE0068E359 /* NetworkClient.swift */,
+				FDB818AC26BA28310068E359 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FDB818B026BA29460068E359 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818B126BA2E660068E359 /* LoadView */,
+				FDB818A126BA03560068E359 /* TranslatableLabel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FDB818B126BA2E660068E359 /* LoadView */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818B226BA2E760068E359 /* LoadView.xib */,
+				FDB818B426BA2EE10068E359 /* LoadView.swift */,
+			);
+			path = LoadView;
+			sourceTree = "<group>";
+		};
+		FDB818B626BA2F200068E359 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818B726BA2F2E0068E359 /* NSObject+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDB8188526B9FA800068E359 /* Build configuration list for PBXNativeTarget "PostsAndComments" */;
 			buildPhases = (
+				FA3D75B8AA81DE05D224B0DB /* [CP] Check Pods Manifest.lock */,
 				FDB8186D26B9FA7F0068E359 /* Sources */,
 				FDB8186E26B9FA7F0068E359 /* Frameworks */,
 				FDB8186F26B9FA7F0068E359 /* Resources */,
+				2B2607135B75AE0C8A5C1B44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +318,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB8189C26BA00BD0068E359 /* Posts.storyboard in Resources */,
+				FDB818A426BA04680068E359 /* Localizable.strings in Resources */,
 				FDB8188126B9FA800068E359 /* LaunchScreen.storyboard in Resources */,
 				FDB8187E26B9FA800068E359 /* Assets.xcassets in Resources */,
-				FDB8187C26B9FA7F0068E359 /* Main.storyboard in Resources */,
+				FDB818B326BA2E760068E359 /* LoadView.xib in Resources */,
+				FDB8189E26BA00CF0068E359 /* PostsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2607135B75AE0C8A5C1B44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA3D75B8AA81DE05D224B0DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PostsAndComments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDB8186D26B9FA7F0068E359 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB8187926B9FA7F0068E359 /* ViewController.swift in Sources */,
+				FDB818B826BA2F2E0068E359 /* NSObject+Extensions.swift in Sources */,
+				FDB8189426B9FFA80068E359 /* Post.swift in Sources */,
 				FDB8187526B9FA7F0068E359 /* AppDelegate.swift in Sources */,
+				FDB818A826BA06540068E359 /* PostsPresenter.swift in Sources */,
+				FDB818AB26BA27FE0068E359 /* NetworkClient.swift in Sources */,
+				FDB818A026BA01A80068E359 /* PostsCell.swift in Sources */,
+				FDB818A626BA06240068E359 /* PostsViewController.swift in Sources */,
+				FDB8189626B9FFF60068E359 /* Comment.swift in Sources */,
+				FDB818AF26BA29420068E359 /* Constants.swift in Sources */,
+				FDB8189126B9FE440068E359 /* ViewController.swift in Sources */,
+				FDB8188F26B9FDC40068E359 /* Presenter.swift in Sources */,
 				FDB8187726B9FA7F0068E359 /* SceneDelegate.swift in Sources */,
+				FDB818AD26BA28310068E359 /* API.swift in Sources */,
+				FDB818B526BA2EE10068E359 /* LoadView.swift in Sources */,
+				FDB818BA26BA32D80068E359 /* Localizable.swift in Sources */,
+				FDB818A226BA03560068E359 /* TranslatableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDB8187A26B9FA7F0068E359 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDB8187B26B9FA7F0068E359 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDB8187F26B9FA800068E359 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +527,13 @@
 		};
 		FDB8188626B9FA800068E359 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D8B3D2EA026FBD2FAF63FA /* Pods-PostsAndComments.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P29XR3Z7G5;
-				INFOPLIST_FILE = PostsAndComments/Info.plist;
+				INFOPLIST_FILE = PostsAndComments/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +547,13 @@
 		};
 		FDB8188726B9FA800068E359 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3A58BB1977CB8220BD7F8B /* Pods-PostsAndComments.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P29XR3Z7G5;
-				INFOPLIST_FILE = PostsAndComments/Info.plist;
+				INFOPLIST_FILE = PostsAndComments/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

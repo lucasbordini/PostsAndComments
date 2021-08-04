@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="126" id="Oq6-2P-R0p" customClass="PostsCell" customModule="PostsAndComments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oq6-2P-R0p" id="1IM-CP-tLL">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="&lt; Title &gt;" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNR-ET-seD">
+                        <rect key="frame" x="16" y="16" width="382" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt; body &gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS7-DL-qBi">
+                        <rect key="frame" x="16" y="60.5" width="382" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pS7-DL-qBi" firstAttribute="leading" secondItem="1IM-CP-tLL" secondAttribute="leading" constant="16" id="6oG-WF-oJV"/>
+                    <constraint firstAttribute="trailing" secondItem="ZNR-ET-seD" secondAttribute="trailing" constant="16" id="Efw-vu-kqS"/>
+                    <constraint firstItem="ZNR-ET-seD" firstAttribute="leading" secondItem="1IM-CP-tLL" secondAttribute="leading" constant="16" id="LJd-oR-gFc"/>
+                    <constraint firstItem="pS7-DL-qBi" firstAttribute="top" secondItem="ZNR-ET-seD" secondAttribute="bottom" constant="24" id="Ups-cb-OOV"/>
+                    <constraint firstAttribute="trailing" secondItem="pS7-DL-qBi" secondAttribute="trailing" constant="16" id="hgd-8G-VYO"/>
+                    <constraint firstAttribute="bottom" secondItem="pS7-DL-qBi" secondAttribute="bottom" constant="16" id="ph2-9G-NlU"/>
+                    <constraint firstItem="ZNR-ET-seD" firstAttribute="top" secondItem="1IM-CP-tLL" secondAttribute="top" constant="16" id="zLK-01-wuq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="pS7-DL-qBi" id="p1A-V8-VCY"/>
+                <outlet property="titleLabel" destination="ZNR-ET-seD" id="pIV-3X-q3n"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="70.982142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

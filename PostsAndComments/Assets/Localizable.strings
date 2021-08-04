@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  PostsAndComments
+
+  Created by Lucas Bordini  Ribeiro de Araujo on 03/08/21.
+  
+*/
+
+//General
+"ok" = "ok";
+
+
+// MARK: - Errors
+"fetch_posts_fail" = "Falha ao carregar as postagens, verifique sua conexão e tente novamente";
+
+
+//MARK: - Screens
+
+// Posts Screen
+"posts_screen_title" = "Postagens Recentes";
+
+
