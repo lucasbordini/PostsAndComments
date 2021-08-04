@@ -12,11 +12,15 @@
 
 // MARK: - Errors
 "fetch_posts_fail" = "Falha ao carregar as postagens, verifique sua conexão e tente novamente";
+"fetch_comments_fail" = "Falha ao carregar os comentarios desta postagem, verifique sua conexão e tente novamente";
 
 
 //MARK: - Screens
 
 // Posts Screen
 "posts_screen_title" = "Postagens Recentes";
+
+// Comments Screen
+"comments_screen_title" = "O que a galera comentou sobre\n%@";
 
 

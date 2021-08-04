@@ -12,4 +12,22 @@ enum Constants {
     enum Network {
         static let BaseURL = "https://jsonplaceholder.typicode.com/"
     }
+
+    enum NibName {
+        static let postCell = "PostsCell"
+        static let commentsCell = "CommentsCell"
+    }
+
+    enum Identifiers {
+        static let postCell = "PostCellIdentifier"
+        static let commentsCell = "CommentsCellIdentifier"
+    }
+
+    enum ViewControllers {
+        static let comments = "CommentsViewController"
+    }
+
+    enum Storyboards {
+        static let comments = "Comments"
+    }
 }

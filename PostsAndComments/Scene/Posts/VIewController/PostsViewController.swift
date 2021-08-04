@@ -26,7 +26,9 @@ class PostsViewController: UIViewController, ViewController {
     private func setupTableView() {
         postsTableView.rowHeight = UITableView.automaticDimension
         postsTableView.estimatedRowHeight = 54
-        postsTableView.register(UINib(nibName: "PostsCell", bundle: Bundle(for: PostsViewController.self)), forCellReuseIdentifier: "cell")
+        postsTableView.register(UINib(nibName: Constants.NibName.postCell,
+                                      bundle: Bundle(for: PostsViewController.self)),
+                                forCellReuseIdentifier: Constants.Identifiers.postCell)
     }
 
     func attach() {
@@ -56,13 +58,17 @@ extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? PostsCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Identifiers.postCell) as? PostsCell {
             cell.setupCell(with: posts[indexPath.row])
             return cell
-        } else {
-            return UITableViewCell()
         }
+        return UITableViewCell()
     }
 
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.row]
+        let vc = SceneFlow.shared.getCommentsView(for: post)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
 }

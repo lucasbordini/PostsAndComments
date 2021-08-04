@@ -29,7 +29,13 @@
 		FDB818B326BA2E760068E359 /* LoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB818B226BA2E760068E359 /* LoadView.xib */; };
 		FDB818B526BA2EE10068E359 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B426BA2EE10068E359 /* LoadView.swift */; };
 		FDB818B826BA2F2E0068E359 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B726BA2F2E0068E359 /* NSObject+Extensions.swift */; };
-		FDB818BA26BA32D80068E359 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B926BA32D80068E359 /* Localizable.swift */; };
+		FDB818BA26BA32D80068E359 /* LocalizableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818B926BA32D80068E359 /* LocalizableKey.swift */; };
+		FDB818BC26BAB7A70068E359 /* SceneFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818BB26BAB7A70068E359 /* SceneFlow.swift */; };
+		FDB818C026BAB8080068E359 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818BF26BAB8080068E359 /* CommentsViewController.swift */; };
+		FDB818C326BAB9290068E359 /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB818C226BAB9290068E359 /* CommentsCell.xib */; };
+		FDB818C526BAC56E0068E359 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818C426BAC56E0068E359 /* CommentsCell.swift */; };
+		FDB818C926BAC6AB0068E359 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB818C826BAC6AB0068E359 /* Comments.storyboard */; };
+		FDB818CC26BACA770068E359 /* CommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB818CB26BACA770068E359 /* CommentsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +65,13 @@
 		FDB818B226BA2E760068E359 /* LoadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadView.xib; sourceTree = "<group>"; };
 		FDB818B426BA2EE10068E359 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		FDB818B726BA2F2E0068E359 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
-		FDB818B926BA32D80068E359 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		FDB818B926BA32D80068E359 /* LocalizableKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableKey.swift; sourceTree = "<group>"; };
+		FDB818BB26BAB7A70068E359 /* SceneFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFlow.swift; sourceTree = "<group>"; };
+		FDB818BF26BAB8080068E359 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		FDB818C226BAB9290068E359 /* CommentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
+		FDB818C426BAC56E0068E359 /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		FDB818C826BAC6AB0068E359 /* Comments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comments.storyboard; sourceTree = "<group>"; };
+		FDB818CB26BACA770068E359 /* CommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +139,7 @@
 			children = (
 				FDB8187D26B9FA800068E359 /* Assets.xcassets */,
 				FDB818A326BA04680068E359 /* Localizable.strings */,
-				FDB818B926BA32D80068E359 /* Localizable.swift */,
+				FDB818B926BA32D80068E359 /* LocalizableKey.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -153,7 +165,9 @@
 		FDB8188B26B9FCD80068E359 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				FDB818BD26BAB7EC0068E359 /* Comments */,
 				FDB8189726BA00750068E359 /* Posts */,
+				FDB818BB26BAB7A70068E359 /* SceneFlow.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -259,6 +273,42 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FDB818BD26BAB7EC0068E359 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818CA26BACA6A0068E359 /* Presenter */,
+				FDB818BE26BAB7F90068E359 /* ViewController */,
+				FDB818C126BAB9140068E359 /* View */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		FDB818BE26BAB7F90068E359 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818BF26BAB8080068E359 /* CommentsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FDB818C126BAB9140068E359 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818C826BAC6AB0068E359 /* Comments.storyboard */,
+				FDB818C226BAB9290068E359 /* CommentsCell.xib */,
+				FDB818C426BAC56E0068E359 /* CommentsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDB818CA26BACA6A0068E359 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FDB818CB26BACA770068E359 /* CommentsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,12 +368,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB818C926BAC6AB0068E359 /* Comments.storyboard in Resources */,
 				FDB8189C26BA00BD0068E359 /* Posts.storyboard in Resources */,
 				FDB818A426BA04680068E359 /* Localizable.strings in Resources */,
 				FDB8188126B9FA800068E359 /* LaunchScreen.storyboard in Resources */,
 				FDB8187E26B9FA800068E359 /* Assets.xcassets in Resources */,
 				FDB818B326BA2E760068E359 /* LoadView.xib in Resources */,
 				FDB8189E26BA00CF0068E359 /* PostsCell.xib in Resources */,
+				FDB818C326BAB9290068E359 /* CommentsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,18 +432,22 @@
 				FDB8189426B9FFA80068E359 /* Post.swift in Sources */,
 				FDB8187526B9FA7F0068E359 /* AppDelegate.swift in Sources */,
 				FDB818A826BA06540068E359 /* PostsPresenter.swift in Sources */,
+				FDB818CC26BACA770068E359 /* CommentsPresenter.swift in Sources */,
 				FDB818AB26BA27FE0068E359 /* NetworkClient.swift in Sources */,
 				FDB818A026BA01A80068E359 /* PostsCell.swift in Sources */,
 				FDB818A626BA06240068E359 /* PostsViewController.swift in Sources */,
 				FDB8189626B9FFF60068E359 /* Comment.swift in Sources */,
+				FDB818C026BAB8080068E359 /* CommentsViewController.swift in Sources */,
 				FDB818AF26BA29420068E359 /* Constants.swift in Sources */,
+				FDB818BC26BAB7A70068E359 /* SceneFlow.swift in Sources */,
 				FDB8189126B9FE440068E359 /* ViewController.swift in Sources */,
 				FDB8188F26B9FDC40068E359 /* Presenter.swift in Sources */,
 				FDB8187726B9FA7F0068E359 /* SceneDelegate.swift in Sources */,
 				FDB818AD26BA28310068E359 /* API.swift in Sources */,
 				FDB818B526BA2EE10068E359 /* LoadView.swift in Sources */,
-				FDB818BA26BA32D80068E359 /* Localizable.swift in Sources */,
+				FDB818BA26BA32D80068E359 /* LocalizableKey.swift in Sources */,
 				FDB818A226BA03560068E359 /* TranslatableLabel.swift in Sources */,
+				FDB818C526BAC56E0068E359 /* CommentsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

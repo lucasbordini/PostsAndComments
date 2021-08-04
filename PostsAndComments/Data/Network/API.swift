@@ -21,7 +21,7 @@ extension API {
         case .posts:
             return "posts"
         case .message(let postId):
-            return "\(postId)/comments"
+            return "posts/\(postId)/comments"
         }
     }
     

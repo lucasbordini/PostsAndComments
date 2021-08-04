@@ -35,7 +35,7 @@ extension ViewController {
 
     func showAlert(message: String) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Localizable.General.ok.localized, style: .cancel, handler: { _ in
+        alert.addAction(UIAlertAction(title: LocalizableKey.General.ok.localized, style: .cancel, handler: { _ in
             alert.dismiss(animated: true)
         }))
         present(alert, animated: true)
